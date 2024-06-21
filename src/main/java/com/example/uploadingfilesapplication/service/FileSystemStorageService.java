@@ -1,4 +1,4 @@
-package com.example.uploadingfilesapplication.storage;
+package com.example.uploadingfilesapplication.service;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,12 +11,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.example.uploadingfilesapplication.exceptions.StorageException;
+import com.example.uploadingfilesapplication.exceptions.StorageFileNotFoundException;
+import com.example.uploadingfilesapplication.service.storage.StorageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
-import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service

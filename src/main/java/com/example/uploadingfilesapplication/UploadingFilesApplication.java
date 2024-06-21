@@ -1,6 +1,6 @@
 package com.example.uploadingfilesapplication;
 
-import com.example.uploadingfilesapplication.storage.StorageService;
+import com.example.uploadingfilesapplication.service.StorageService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

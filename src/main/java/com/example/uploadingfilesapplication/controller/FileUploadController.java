@@ -1,4 +1,4 @@
-package com.example.uploadingfilesapplication;
+package com.example.uploadingfilesapplication.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -20,8 +20,8 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.example.uploadingfilesapplication.storage.StorageFileNotFoundException;
-import com.example.uploadingfilesapplication.storage.StorageService;
+import com.example.uploadingfilesapplication.exceptions.StorageFileNotFoundException;
+import com.example.uploadingfilesapplication.service.StorageService;
 
 @Controller
 public class FileUploadController {

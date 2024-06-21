@@ -1,4 +1,4 @@
-package com.example.uploadingfilesapplication.storage;
+package com.example.uploadingfilesapplication.service.storage;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
